@@ -9,9 +9,10 @@ class App extends React.Component {
         this.state = {
             listItems:[]
         };
+        this.handleFormData = this.handleFormData.bind(this);
     }
     handleFormData(taskDetails){
-        const tmpListItem = [...this.state.listItem, taskDetails];
+        const tmpListItem = [...this.state.listItems, taskDetails];
         this.setState({
             listItems: tmpListItem
         })

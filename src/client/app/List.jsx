@@ -12,7 +12,7 @@ class List extends React.Component {
         const taskDetails = this.props.listData;
         return (
            <div>
-               {taskDetails.map((i,task) => {
+               {taskDetails.map((task,i) => {
                    return (
                        <div>
                        <h1 key={i}>{task.title}</h1>
